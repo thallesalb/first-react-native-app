@@ -101,14 +101,42 @@ export default class Bananas extends Component {
 
 import React, { Component } from 'react';
 import Welcome from './Welcome'
+import { View, Text, TouchableOpacity } from 'react-native'
+import styles from '../styles/Index'
 
 export default class App extends Component {
+
+  state = {
+    slogan: 'Lorem Ipsum / Ipsum Lorem'
+  }
+
+  alternar = () => {
+    this.setState({
+      slogan: this.state.slogan ? '' : 'Lorem Ipsum / Ipsum Lorem'
+    })
+  }
+
   render() {
     return (
-      <Welcome
+      /*<Welcome
         titulo = "Aprendendo React Native"
         slogan = "Lorem Ipsum / Ipsum Lorem"
-      />
+      />*/
+
+      <View style={styles.container}>
+        <Text style={styles.texto}>
+          Aprendendo React Native
+          </Text>
+        <Text style={styles.slogan}>
+          {this.state.slogan}
+        </Text>
+
+        <TouchableOpacity
+        style={styles.botao}
+          onPress={this.alternar}>
+          <Text>Mudar State</Text>
+        </TouchableOpacity>
+      </View>
     )
   }
 }
