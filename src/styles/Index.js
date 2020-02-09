@@ -9,11 +9,13 @@ const styles = StyleSheet.create({
     },
     texto: {
       color: '#fff',
-      fontSize: 22
+      fontSize: 23,
+      fontWeight: 'bold'
     },
     slogan: {
       color: '#000',
-      fontSize: 18
+      fontSize: 18,
+      fontWeight: 'bold'
     }
   })
 

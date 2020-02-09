@@ -100,16 +100,15 @@ export default class Bananas extends Component {
 }*/
 
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
-import styles from './styles/index'
+import Welcome from './Welcome'
 
 export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-       <Text style={styles.texto}>Aprendendo React</Text>
-       <Text style={styles.slogan}>Lorem Ipsum / Ipsum Lorem</Text>
-      </View>
+      <Welcome
+        titulo = "Aprendendo React Native"
+        slogan = "Lorem Ipsum / Ipsum Lorem"
+      />
     )
   }
 }
