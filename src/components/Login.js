@@ -29,7 +29,7 @@ export default class Login extends Component {
 
                 <TouchableOpacity
                     style={styles.botao}
-                    onPress={() => { this.clicou() }}
+                    onPress={() => { this.props.navigation.navigate('Home') }}
                 >
                     <Text style={styles.textoBotao}>Login</Text>
                 </TouchableOpacity>
