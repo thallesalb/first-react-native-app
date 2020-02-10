@@ -102,7 +102,7 @@ export default class Bananas extends Component {
 import React, { Component } from 'react';
 import Welcome from './Welcome'
 import { View, Text, TouchableOpacity } from 'react-native'
-import styles from '../styles/Index'
+import styles from '../styles/App'
 
 export default class App extends Component {
 
