@@ -3,9 +3,14 @@ import { Text, StyleSheet, View } from 'react-native'
 
 export default class Home extends Component {
     render() {
+
+        const { navigation } = this.props
+        const nomeUsuario = navigation.getParam('nome')
+
         return (
             <View style={styles.container}>
-                <Text style={styles.texto}>WELCOME! Your Home Page</Text>
+                <Text style={styles.texto}>Olá { nomeUsuario} !!!</Text>
+                <Text style={styles.texto}> Esse é seu perfil </Text>
             </View>
         )
     }
@@ -14,7 +19,7 @@ export default class Home extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#0066cc',
+        backgroundColor: '#7f8c8d',
         alignItems: 'center'
       },
       texto: {
