@@ -9,7 +9,7 @@ export default class Home extends Component {
 
         return (
             <View style={styles.container}>
-                <Text style={styles.texto}>Olá { nomeUsuario} !!!</Text>
+                <Text style={styles.texto}>Olá { nomeUsuario } !!!</Text>
                 <Text style={styles.texto}> Esse é seu perfil </Text>
             </View>
         )
